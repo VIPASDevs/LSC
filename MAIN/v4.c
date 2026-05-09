@@ -19,7 +19,7 @@ int main() {
 	sleep(2); printf("Reconstruction of Py Calculator\n");
 	
 	for (;;) {
-		printf("\nOPTIONS: EXIT [.], ADDITION [+], SUBTRACTION [-], MULTIPLICATION [*], DIVISION [/]\n");
+		sleep(1); printf("\n\nOPTIONS: EXIT [.], ADDITION [+], SUBTRACTION [-], MULTIPLICATION [*], DIVISION [/], REMAINDER [|], PERCENT OF [<], REMAINDER OF [>].\n");
 		printf("INPUT: ");
 		scanf(" %c", &choice);
 		printf("\n");
@@ -32,7 +32,7 @@ int main() {
 		else if (choice == '+') {
 			printf("NUMBER: ");
 			scanf(" %d", &a);
-			sleep(1); printf("SECOND NUMBER: ");
+			printf("SECOND NUMBER: ");
 			scanf(" %d", &b);
 			total = a + b;
 			
@@ -43,7 +43,7 @@ int main() {
 		else if (choice == '-') {
 			printf("NUMBER: ");
 			scanf(" %d", &a);
-			sleep(1); printf("SECOND NUMBER: ");
+			printf("SECOND NUMBER: ");
 			scanf(" %d", &b);
 			total = a - b;
 			
@@ -54,7 +54,7 @@ int main() {
 		else if (choice == '*') {
 			printf("NUMBER: ");
 			scanf(" %d", &a);
-			sleep(1); printf("SECOND NUMBER: ");
+			printf("SECOND NUMBER: ");
 			scanf(" %d", &b);
 			total = a * b;
 			
@@ -63,13 +63,73 @@ int main() {
 		}
 		
 		else if (choice == '/') {
+			printf("USING DIVISION WITH NUMBER '0', WILL CRASH THE PROGRAM ...\n\n");
 			printf("NUMBER: ");
 			scanf(" %d", &a);
-			sleep(1); printf("SECOND NUMBER: ");
+			printf("SECOND NUMBER: ");
 			scanf(" %d", &b);
+			total = a / b;
 			
 			sleep(1); printf("TOTAL: ");
 			printf(" %d\n", total);
+		}
+		
+		else if (choice == '|') {
+			double c;
+			double d;
+			
+			printf("NUMBER: ");
+			scanf(" %lf", &c);
+			printf("SECOND NUMBER: ");
+			scanf(" %lf", &d);
+			double result = c - (int)(c / d) * d; 
+			
+			sleep(1); printf("TOTAL: ");
+			printf(" %lf\n", result);
+		}
+		
+		else if (choice == '<') {
+			int a;
+			int b;
+			double total;
+			
+			printf("USING PERCENT OF WITH 0 WILL CAUSE 'inf%%' AND/OR '-nan%%' TO PRINT OUT ...\n\n");
+			
+			printf("NUMBER: ");
+			scanf(" %d", &a);
+			printf("SECOND NUMBER: ");
+			scanf(" %d", &b);
+			total = ((double)a / b) * 100;
+			
+			sleep(1); printf(" %d", a);
+			printf("%% IS ");
+			printf(" %f", total);
+			printf("%% OF ");
+			printf("%d", b);
+		}
+		
+		else if (choice == '>') {
+			int a;
+			int b;
+			double total;
+			
+			printf("USING REMAINDER OF WITH 0 WILL CAUSE '-nan' TO PRINT OUT ...\n\n");
+			
+			printf("WHOLE NUMBER: ");
+			scanf(" %d", &a);
+			printf("PART NUMBER: ");
+			scanf(" %d", &b);
+			total = (double)b / (a / 100.0); 
+			
+			sleep(1); printf(" %d", b);
+			printf(" IS ");
+			printf(" %d", a);
+			printf("%% OF ");
+			printf(" %f", total);
+		}
+		
+		else {
+			printf("INVALID INPUT. \n");
 		}
 	}
 	return 0;
