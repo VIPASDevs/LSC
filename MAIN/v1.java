@@ -8,7 +8,7 @@ public class v1 {
 
         System.out.println("\nLightweight Source Calculator [LSC]");
         Thread.sleep(1000);
-        System.out.println("Version BETA");
+        System.out.println("Version Version 01.00.00");
         Thread.sleep(1000);
         System.out.println("Child of Py-Calculator and Community Calculator");
         Thread.sleep(1000);
