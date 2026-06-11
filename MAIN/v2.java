@@ -1,14 +1,24 @@
 import java.util.Scanner;
 
-public class v1 {
+public class v2 {
     static int total;
 
     public static void main(String[] args) throws InterruptedException {        
         Scanner input = new Scanner(System.in);
 
+        System.out.println(" [OK] RAM");
+        Thread.sleep(2000);
+        System.out.println(" [OK] CPU");
+        Thread.sleep(2000);
+        System.out.println(" [OK] GPU");
+        Thread.sleep(2000);
+        System.out.println(" [OK] APPLICATION SANITY");
+        Thread.sleep(2000);
+        System.out.println(" [OK] APPLICATION FILES");
+
         System.out.println("\nLightweight Source Calculator [LSC]");
         Thread.sleep(1000);
-        System.out.println("Version Version 01.00.00");
+        System.out.println("Version Version 02.00.00");
         Thread.sleep(1000);
         System.out.println("Child of Py-Calculator and Community Calculator");
         Thread.sleep(1000);
@@ -16,7 +26,7 @@ public class v1 {
     
         for (;;) {
             System.out.println("\nOPTIONS: E [Exit] | + [Addition] | - [Subtraction] | X [Multiplications] | / [Division] | * [To The Power] | % [Percent Of], > [Remainder]");
-            System.out.printf("INPUT: ");
+            System.out.printf("USER_INPUT: ");
             char choice = Character.toUpperCase(input.next().charAt(0));
 
             if (choice == 'I') {
