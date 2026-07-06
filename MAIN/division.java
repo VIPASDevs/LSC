@@ -11,7 +11,8 @@ public class division {
             
         System.out.printf("NUMBER [2]: ");
         int b = divput.nextInt();
-
+        screen.clear();
+        
         total = a / b;
         System.out.println("TOTAL: " + total);
     }

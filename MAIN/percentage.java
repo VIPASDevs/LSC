@@ -10,6 +10,7 @@ public class percentage {
             
         System.out.printf("NUMBER [OF]: ");
         double b = addput.nextInt();
+        screen.clear();
 
         double percentage = (a / b) % 100;
         System.out.println(a + " IS " + percentage + "% OF " + b);

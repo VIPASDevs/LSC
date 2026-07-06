@@ -10,7 +10,8 @@ public class remainder {
             
         System.out.printf("NUMBER [DIVISOR]: ");
         int b = addput.nextInt();
-
+        screen.clear();
+        
         int whole = a / b;
         int remainder =  a % b;
         System.out.println("WHOLE: " + whole);

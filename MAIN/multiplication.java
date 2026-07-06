@@ -11,7 +11,8 @@ public class multiplication {
 
         System.out.printf("NUMBER [2]: ");
         int b = mulput.nextInt();
-
+        screen.clear();
+        
         total = a * b;
         System.out.println("\nTOTAL: " + total);
     }

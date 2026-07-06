@@ -11,7 +11,8 @@ public class subtraction {
             
         System.out.printf("NUMBER [2]: ");
         int b = subput.nextInt();
-
+        screen.clear();
+        
         total = a - b;
         System.out.println("TOTAL: " + total);
     }

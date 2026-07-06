@@ -6,16 +6,6 @@ public class v2 {
     public static void main(String[] args) throws InterruptedException {        
         Scanner input = new Scanner(System.in);
 
-        System.out.println(" [OK] RAM");
-        Thread.sleep(2000);
-        System.out.println(" [OK] CPU");
-        Thread.sleep(2000);
-        System.out.println(" [OK] GPU");
-        Thread.sleep(2000);
-        System.out.println(" [OK] APPLICATION SANITY");
-        Thread.sleep(2000);
-        System.out.println(" [OK] APPLICATION FILES");
-
         System.out.println("\nLightweight Source Calculator [LSC]");
         Thread.sleep(1000);
         System.out.println("Version Version 02.00.00");
@@ -23,6 +13,7 @@ public class v2 {
         System.out.println("Child of Py-Calculator and Community Calculator");
         Thread.sleep(1000);
         System.out.println("Type 'I' for Informations");
+        screen.clear();
     
         for (;;) {
             System.out.println("\nOPTIONS: E [Exit] | + [Addition] | - [Subtraction] | X [Multiplications] | / [Division] | * [To The Power] | % [Percent Of], > [Remainder]");
@@ -32,6 +23,7 @@ public class v2 {
             if (choice == 'I') {
                 Thread.sleep(1000);
                 System.out.println("This is a refactoring from the ground up of Text Interface Calculator [TIC] in the language JAVA. TIC itself is based off Community Calculator. Community Calculator itself is based off of Py-Calculator.");
+                screen.clear();
             }
 
             if (choice == 'E') {
