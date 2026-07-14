@@ -8,7 +8,7 @@ input: Char;
 
 begin
 writeln('Lightweight Source Calculator');
-writeln('Vers. Beta 3.00.00 [FREE PASCAL]');
+writeln('Vers. 3.00.00 [FREE PASCAL]');
 	
 while True do
 begin
