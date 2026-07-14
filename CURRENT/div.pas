@@ -16,7 +16,12 @@ readln(a);
 write('ENTER NUMBER: ');
 readln(b);
 
+if b = 0 then
+writeln('CANNOT DIVIDE BY ZERO')
+else
+begin
 total := a div b;
 writeln(LineEnding, 'TOTAL: ', total);
+end;
 end;
 end.
