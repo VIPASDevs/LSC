@@ -5,18 +5,24 @@ interface
 procedure TimNum; {makes the code below a function}
 implementation
 
+uses
+	sysutils;
+
 procedure TimNum;
-var
-a, b, total: Integer;
+	var
+		a, b, total: Integer;
 
-begin
-write(LineEnding, 'ENTER NUMBER: ');
-readln(a);
+	begin
+		Sleep(500);
+		write(LineEnding, 'ENTER NUMBER: ');
+		readln(a);
 
-write('ENTER NUMBER: ');
-readln(b);
+		Sleep(500);
+		write('ENTER NUMBER: ');
+		readln(b);
 
-total := a * b;
-writeln(LineEnding, 'TOTAL: ', total);
-end;
+		Sleep(300);
+		total := a * b;
+		writeln(LineEnding, 'TOTAL: ', total);
+	end;
 end.
