@@ -41,7 +41,7 @@ public class lscde {
 				result.setText("GESAMT: " + total);
 			}
 			else {
-				result.setText("GESAMT: НЕПРАВИЛЬНЫЙ");
+				result.setText("FEHLER: UNGÜLTIG");
 			}
 		});
 		
