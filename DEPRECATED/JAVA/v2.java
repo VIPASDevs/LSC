@@ -31,6 +31,7 @@ public class v2 {
                 Thread.sleep(1000);
                 System.out.println("EXITING!");
                 System.out.println("...");
+                screen.clear();
                 break;
             }
 
