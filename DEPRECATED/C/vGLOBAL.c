@@ -27,7 +27,7 @@ int main() {
 	wait(1000);
 	printf("\nText Interface Calculator, TIC\n");
 	wait(1000);
-	printf("GLOBAL EDITION [Linux, MacOS: vU.c | WindowsOS: vWINDOWS.c\n");
+	printf("GLOBAL EDITION [Linux, MacOS: vUNIX.c | WindowsOS: vWINDOWS.c\n");
 	printf("!! This program uses CPU cycles to pause. Please use the platform specific version for your Operating System for more optimized usage !!\n");
 	wait(1000);
 	printf("Version 04.01.00\n");
