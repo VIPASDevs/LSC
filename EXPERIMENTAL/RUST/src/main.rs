@@ -1,12 +1,14 @@
+mod addition; //for addition
+use addition::add; //to call addition
+mod subtraction; //for subtraction
+use subtraction::sub; //to call sub
 use std::io::{self, Write};
 
 fn main() {
-    let mut total;
-
-    println!("MODERNISED SOURCE CALCULATOR");
-    println!("VERSION BETA");
-    println!("EXIT [.], ADDITION [+], SUBTRACTION [-]");
+	clearscreen::clear().expect("FAILED TO CLEAR SCREEN.");
+    println!("Lightweight Source Calculator - RUST VERS.");
     loop {
+		println!("EXIT [.] | ADDITION [+] | SUBTRACTION [-]");
         print!("INPUT: ");
         io::stdout().flush().unwrap();
 
@@ -21,70 +23,15 @@ fn main() {
             .expect("FAILED TO CONVERT");
 
         if finput == '+' {
-            print!("\n\nNUMBER: ");
-            io::stdout().flush().unwrap();
-
-            let mut num1 = String::new();
-            io::stdin()
-                .read_line(&mut num1)
-                .expect("FAILED TO READ");
-
-            let num1: i32 = num1
-                .trim()
-                .parse()
-                .expect("FAILED TO CONVERT");
-
-
-            print!("NUMBER: ");
-            io::stdout().flush().unwrap();
-
-            let mut num2 = String::new();
-            io::stdin()
-                .read_line(&mut num2)
-                .expect("FAILED TO READ");
-
-            let num2: i32 = num2
-                .trim()
-                .parse()
-                .expect("FAILED TO CONVERT");
-
-            total = num1 + num2;
-            println!("\nTOTAL: {}\n", total);
+            add();
         }
 
         if finput == '-' {
-            print!("\n\nNUMBER: ");
-            io::stdout().flush().unwrap();
-
-            let mut num1 = String::new();
-            io::stdin()
-                .read_line(&mut num1)
-                .expect("FAILED TO READ");
-
-            let num1: i32 = num1
-                .trim()
-                .parse()
-                .expect("FAILED TO CONVERT");
-
-
-            print!("NUMBER: ");
-            io::stdout().flush().unwrap();
-
-            let mut num2 = String::new();
-            io::stdin()
-                .read_line(&mut num2)
-                .expect("FAILED TO READ");
-
-            let num2: i32 = num2
-                .trim()
-                .parse()
-                .expect("FAILED TO CONVERT");
-
-            total = num1 - num2;
-            println!("\nTOTAL: {}\n", total);
+            sub();
         }
 
         if finput == '.' {
+			clearscreen::clear().expect("FAILED TO CLEAR SCREEN.");
             println!("BYE.");
             break;
         }
