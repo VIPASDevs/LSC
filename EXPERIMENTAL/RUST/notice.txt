@@ -1,0 +1,4 @@
+You will have to make your own Cargo.lock because I do not know if it is platform-dependent.
+
+I am shit at this language, I know almost nothing, I constantly refer to other files to remember how to do stuff.
+Please improve this if you want, I don't want this to be shit, but under my development, guess what it'll be.. shit.
