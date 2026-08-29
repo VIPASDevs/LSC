@@ -2,6 +2,8 @@ mod addition; //for addition
 use addition::add; //to call addition
 mod subtraction; //for subtraction
 use subtraction::sub; //to call sub
+mod multiplication; //to call multiplication
+use multiplication::mul; //to call multiplication
 use std::io::{self, Write};
 
 fn main() {
@@ -26,14 +28,22 @@ fn main() {
             add();
         }
 
-        if finput == '-' {
+        else if finput == '-' {
             sub();
         }
 
-        if finput == '.' {
+        else if finput == '*' {
+			mul();
+		}
+
+       else  if finput == '.' {
 			clearscreen::clear().expect("FAILED TO CLEAR SCREEN.");
             println!("BYE.");
             break;
         }
+
+        else {
+			println!("INVALID.\n");
+		}
     }
 }
