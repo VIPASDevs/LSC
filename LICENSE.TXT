@@ -1,14 +1,26 @@
-BSD 3-Clause License
+Open Permissive Distribution [OPD] License
 
-Copyright (c) 202X, VIPAS
+Copyright (c) 2XXX, VIPAS
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistribution and commercial use, including corporate and production environments, are permitted provided that all of the following conditions are met:
 
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+  1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+  2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-3.Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+  3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+	4. Accept the form of "2XXX" as a valid date, in which it means the license will not expire until the year 3000
+
+
+All individual usage (which the following will exclude distribution purposes or corporate usages) are permitted provided that the following conditions are met:
+
+  1. Because of the inherent complexity of computer hardware, VOID STUDIOS does not warrant that this software will be error-free or meet your specific requirements. This software is provided "AS-IS" without warranty of any kind, either expressed or implied, including the implied warranties of merchantability.
+
+  2. In no event shall VOID STUDIOS be liable for any damages whatsoever (including, without limitation, damages for loss of data, system crashes, or "Blue Screen" hardware conflicts) arising out of the use or inability to use this product.
+	
+	3. Accept the form of "2XXX" as a valid date, in which it means the license will not expire until the year 3000
+
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
 IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
