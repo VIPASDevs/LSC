@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BASIC ARITHMETIC TEST</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+            }
+
+            input {
+                padding: 10px;
+                width: 100px;
+            }
+
+            button {
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LIGHTWEIGHT SOURCE CALCULATOR - JS-HTML-CSS VERSION</h1>
+        <input id="number1" type="number">
+        <input id="number2" type="number">
+        <br><br> <!--br makes linebreaks-->
+
+        <button id="add">ADD</button>
+        <button id="subtraction">SUBTRACT</button>
+        <button id="multiply">MULTIPLY</button>
+        <button id="divide">DIVIDE</button>
+
+        <h2 id="result">RESULT: </h2>
+
+        <script>
+            const number1 = document.querySelector("#number1");
+            const number2 = document.querySelector("#number2");
+            const addButton = document.querySelector("#add");
+            const subtractButton = document.querySelector("#subtraction");
+            const multiplyButton = document.querySelector("#multiply");
+            const divideButton = document.querySelector("#divide");
+            const result = document.querySelector("#result");
+
+            addButton.addEventListener("click", () => {
+                const a = Number(number1.value);
+                const b = Number(number2.value);
+                const answer = a + b;
+                
+                result.textContent = "RESULT: " + answer;
+
+                //<>.value = ""; sets it back to 0.
+
+                number1.value = "";
+                number2.value = "";
+            });
+
+            subtractButton.addEventListener("click", () => {
+                const a = Number(number1.value);
+                const b = Number(number2.value);
+                const answer = a - b;
+                
+                result.textContent = "RESULT: " + answer;
+
+                number1.value = "";
+                number2.value = "";
+            });
+
+            multiplyButton.addEventListener("click", () => {
+                const a = Number(number1.value);
+                const b = Number(number2.value);
+                const answer = a * b;
+                
+                result.textContent = "RESULT: " + answer;
+
+                number1.value = "";
+                number2.value = "";
+            });
+
+            divideButton.addEventListener("click", () => {
+                const a = Number(number1.value);
+                const b = Number(number2.value);
+                const answer = a / b;
+                
+                result.textContent = "RESULT: " + answer;
+
+                number1.value = "";
+                number2.value = "";
+            });
+        </script>
+    </body>
+</html>
