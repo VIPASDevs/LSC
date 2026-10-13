@@ -1,6 +1,6 @@
 Open Permissive Distribution [OPD] License
 
-Copyright (c) 2XXX, VIPAS
+Copyright (c) 2XXX, VOID STUDIOS
 
 Redistribution and commercial use, including corporate and production environments, are permitted provided that all of the following conditions are met:
 
