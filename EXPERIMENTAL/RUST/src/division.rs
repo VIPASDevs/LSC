@@ -27,9 +27,15 @@ pub fn div() {
 		.trim()
 		.parse()
 		.expect("CONVERSION FOR N2 FAILED.");
-
-	let total = num1 / num2; //hey I guessed this line right!
-	//but the compiler said it does not need mutable... Why? [RESEARCH REQUIRED]
-	clearscreen::clear().expect("FAILED TO CLEAR SCREEN.");
-	println!("TOTAL: {}\n", total);
+	
+	if num2 == 0 {
+		clearscreen::clear().expect("FAILED TO CLEAR THE SCREEB");
+		println!("CANNOD DIVIDE BY ZERO!");
+	}
+	else {
+		let total = num1 / num2; //hey I guessed this line right!
+		//but the compiler said it does not need mutable... Why? [RESEARCH REQUIRED]
+		clearscreen::clear().expect("FAILED TO CLEAR SCREEN.");
+		println!("TOTAL: {}\n", total);
+	}
 }
