@@ -1,8 +1,9 @@
 use std::io::{self, Write};
-
+use std::{thread, Duration};
 
 pub fn sub() {
-	print!("\n\nNUM1: ");
+	thread::sleep(Duration::from_millis(500));
+	print!("\n\nN1: ");
 	io::stdout().flush().unwrap();
 
 	let mut num1 = String::new();
@@ -15,7 +16,7 @@ pub fn sub() {
 		.parse()
 		.expect("CONVERSION FOR N1 FAILED.");
 
-
+	thread::sleep(Duration::from_millis(500));
 	print!("N2: ");
 	io::stdout().flush().unwrap();
 
