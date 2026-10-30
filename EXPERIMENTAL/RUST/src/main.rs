@@ -9,11 +9,13 @@ use division::div; //for division
 mod power;
 use power::pow;
 use std::io::{self, Write};
+use std::{thread, Duration};
 
 fn main() {
 	clearscreen::clear().expect("FAILED TO CLEAR SCREEN.");
     println!("Lightweight Source Calculator - RUST VERS.");
     loop {
+		thread::sleep(Duration::from_millis(500));
 		println!("EXIT [.] | ADDITION [+] | SUBTRACTION [-] | MULTIPLICATION [*] | DIVISION [/] | POWER [^]");
         print!("INPUT: ");
         io::stdout().flush().unwrap();
