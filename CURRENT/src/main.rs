@@ -14,6 +14,8 @@ use std::{thread, Duration};
 fn main() {
 	clearscreen::clear().expect("FAILED TO CLEAR SCREEN.");
     println!("Lightweight Source Calculator - RUST VERS.");
+    thread::sleep(Duration::from_millis(500));
+    println!("VERSION 3.01.00");
     loop {
 		thread::sleep(Duration::from_millis(500));
 		println!("EXIT [.] | ADDITION [+] | SUBTRACTION [-] | MULTIPLICATION [*] | DIVISION [/] | POWER [^]");
