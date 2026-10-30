@@ -1,10 +1,12 @@
 use std::io::{self, Write};
+use std::{thread, Duration};
 
 pub fn div() {
+	thread::sleep(Duration::from_millis(500));
 	print!("\n\nN1: ");
 	io::stdout().flush().unwrap();
 
-		let mut num1 = String::new();
+	let mut num1 = String::new();
 	io::stdin()
 		.read_line(&mut num1)
 		.expect("FAILED TO PARSE N1.");
@@ -14,7 +16,7 @@ pub fn div() {
 		.parse()
 		.expect("CONVERSION FOR N1 FAILED.");
 
-
+	thread::sleep(Duration::from_millis(500));
 	print!("N2: ");
 	io::stdout().flush().unwrap();
 
