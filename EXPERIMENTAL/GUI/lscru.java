@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class лскру {
+public class lscru {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("ЛСК — Альфа-версия графического интерфейса пользователя");
 		
