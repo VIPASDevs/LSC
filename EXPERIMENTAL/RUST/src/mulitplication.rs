@@ -1,6 +1,8 @@
 use std::io::{self, Write};
+use std::{thread, Duration};
 
 pub fn mul() {
+	thread::sleep(Duration::from_millis(500));
 	print!("\n\nN1: ");
 	io::stdout().flush().unwrap();
 
@@ -14,7 +16,7 @@ pub fn mul() {
 		.parse()
 		.expect("CONVERSION FOR N1 FAILED.");
 
-
+	thread::sleep(Duration::from_millis(500));
 	print!("N2: ");
 	io::stdout().flush().unwrap();
 
