@@ -4,7 +4,7 @@ version = "0.0.0"
 edition = "2024"
 
 [[bin]]
-name = "MSC"
+name = "lsc"
 path = "src/main.rs"
 
 [dependencies]
